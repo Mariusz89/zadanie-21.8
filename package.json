@@ -1,5 +1,5 @@
 {
-  "name": "zadanie-21.8",
+  "name": "zadanie-22",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.13.6"
+  }
 }
