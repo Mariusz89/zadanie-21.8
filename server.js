@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
+const express = require('express');
+const app = express();
    
-
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://Mario:kodilla@ds129386.mlab.com:29386/database1', {
     useMongoClient: true
@@ -156,3 +156,12 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findKennyAndDelete)
     .then(findBennyAndRemove)
     .catch(console.log.bind(console))
+
+app.set('port', (process.env.PORT || 5000));
+
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
