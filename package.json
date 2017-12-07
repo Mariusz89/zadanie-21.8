@@ -1,7 +1,6 @@
 {
   "name": "zadanie-22",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +12,18 @@
   "dependencies": {
     "express": "^4.16.2",
     "http-server": "^0.10.0",
-    "mongoose": "^4.13.6"
-  }
+    "mime": "^2.0.3",
+    "mongoose": "^4.13.6",
+    "qs": "^6.5.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariusz89/zadanie-21.8.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mariusz89/zadanie-21.8/issues"
+  },
+  "homepage": "https://github.com/Mariusz89/zadanie-21.8#readme",
+  "description": ""
 }
